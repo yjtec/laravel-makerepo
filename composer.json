@@ -1,0 +1,32 @@
+{
+    "name": "yjtec/laravel-makerepo",
+    "description": "laravel make repoi",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kidkang",
+            "email": "723616880@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+     "autoload": {
+        "psr-4": {
+            "Yjtec\\Repo\\":"src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yjtec\\Repo\\RepoServiceProvider"
+            ]
+        }
+    }
+}

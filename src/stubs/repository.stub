@@ -1,0 +1,19 @@
+<?php
+namespace RepositoryNamespace;
+
+use App\Models\ModelName;
+use App\Repositories\Contracts\NameInterface;
+class DummyClass extends Repository implements NameInterface
+{
+    
+    /**
+     * Specify Model class name
+     * 
+     * @return string
+     */
+    public function model()
+    {
+        // TODO: Implement model() method.
+        return ModelName::class;
+    }
+}
