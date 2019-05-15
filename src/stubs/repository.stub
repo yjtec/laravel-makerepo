@@ -3,6 +3,7 @@ namespace RepositoryNamespace;
 
 use App\Models\ModelName;
 use App\Repositories\Contracts\NameInterface;
+use Yjtec\Repo\Repository;
 class DummyClass extends Repository implements NameInterface
 {
     
