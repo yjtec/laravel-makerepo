@@ -40,4 +40,13 @@ abstract class Repository
     {
         return $this->model->where($where)->update($data);
     }
+    public function page($page)
+    {
+        return $this->model->paginate($page);
+    }
+
+    public function add($data)
+    {
+        return $this->model->create($data);
+    }
 }
