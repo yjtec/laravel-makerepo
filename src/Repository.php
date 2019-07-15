@@ -49,4 +49,9 @@ abstract class Repository
     {
         return $this->model->create($data);
     }
+
+    public function findByField($field, $value)
+    {
+        return $this->model->where($field, $value)->first();
+    }
 }
