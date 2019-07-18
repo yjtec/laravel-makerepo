@@ -45,6 +45,9 @@ abstract class Repository
         return $this->model->paginate($page);
     }
 
+    public function list($where){
+        return $this->model->where($where)->get();
+    }
     public function add($data)
     {
         return $this->model->create($data);

@@ -59,3 +59,6 @@ php artisan make:repo TestRepository -i Test
 
 > 查找符合field条件的第一条数据
 
+## 1.6 list($where)
+> 查找符合条件的数据 返回全部
+
